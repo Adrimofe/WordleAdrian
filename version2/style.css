@@ -1,0 +1,149 @@
+html {
+    /* para hacer que el ancho del box no afecte nuestros elementos */
+    box-sizing: border-box;
+    /* para que un rem sea igual a 10px */
+    font-size: 62.5%;
+}
+body {  
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+form input{
+    width: 6rem;
+    height: 5rem;
+}
+@media (max-width: 768px) {
+    form input{
+        width: 6rem;
+        height: 6rem;
+    }  
+}
+h1, h2, h3, h4 {
+   text-align: center;
+    line-height: 2.8rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+.intento{
+    margin-top: 0.2rem;
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+}
+.campo{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1rem solid black;
+}
+.cajacomprueba{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+   
+}
+#comprueba{
+    text-transform: uppercase;
+    width: auto;
+    color: black;
+    font-weight: bold;
+}
+
+#error{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: crimson;
+    font-weight: bold;
+}
+
+.fondoVerde{
+    background-color: #6AAA64;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1rem solid grey;
+}
+.fondoNegro{
+    background-color: #8f8f8f;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1rem solid white;
+}
+.fondoAmarillo{
+    background-color: #e9f356;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1rem solid white;
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.mediohr{
+    width: 50%;
+}
+#teclado{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+@media (max-width: 768px) {
+   
+  
+}
+#teclado button{
+    min-width: 3.8rem;
+    height: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0.2rem solid #D3D6DA;
+    background-color: #D3D6DA;
+}
+input[type="button"]{
+    min-width: 3.8rem;
+    height: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0.2rem solid #D3D6DA;
+    background-color: #D3D6DA;
+}
+.primera-fila{
+    display: flex;
+    gap: 0.2rem;
+}
+.segunda-fila{
+    display: flex;
+    gap: 0.2rem;
+}
+.tercera-fila{
+    display: flex;
+    gap: 0.2rem;
+}
+input:disabled{
+    background-color: rgb(231, 231, 231);
+}
